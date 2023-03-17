@@ -1,0 +1,102 @@
+Different Git Commands to better understand Git:
+
+git init - Initialize a new Git repository
+Example: git init my-project
+
+git clone - Clone a remote repository
+Example: git clone https://github.com/username/repo.git
+
+git add - Stage changes for commit
+Example: git add myfile.txt
+
+git commit - Commit changes to the repository
+Example: git commit -m "Added myfile.txt"
+
+if you committed and made a small change you wanted to push:
+Example: git commit --amend --no-edit
+
+if you want to CHANGE that message:
+Example: git commit --amend "I need to fix that"
+
+git push - Push changes to a remote repository
+Example: git push origin main
+
+git pull - Pull changes from a remote repository
+Example: git pull origin main
+
+git branch - Create or list branches
+Example: git branch my-branch
+
+git checkout - Switch branches or restore working tree files
+Example: git checkout my-branch
+
+git merge - Merge two or more branches
+Example: git merge my-branch
+
+git status - Show the status of the working tree
+Example: git status
+
+git stash - Stores changes made
+
+git log: Shows the commit history of the repository, including commit message, author, date, and hash.
+Example: git log
+
+git remote: Shows the remote repositories that are configured for the current repository.
+Example: git remote -v
+
+git fetch: Fetches changes from a remote repository without merging them.
+Example: git fetch upstream
+
+git reset: Resets the current branch to a specified commit or to the most recent commit that was pulled from a remote repository.
+Example: git reset --hard HEAD
+
+git rebase: Applies the changes from one branch on top of another branch, effectively rewriting the commit history.
+Example: git rebase my-branch
+
+git tag: Creates a lightweight or annotated tag at the current commit.
+Example: git tag v1.0.0
+
+git diff: Shows the difference between two commits, branches, or files.
+Example: git diff my-branch master
+
+git blame: Shows the commit history and author of each line in a file.
+Example: git blame myfile.txt
+
+git cherry-pick: Applies a specific commit from one branch to another branch.
+Example: git cherry-pick abc123
+
+git revert: Reverts one or more commits, creating a new commit that undoes the changes.
+Example: git revert abc123
+
+git show: Shows information about a commit, including the changes made in that commit.
+Example: git show abc123
+
+git remote add: Adds a new remote repository to the current Git repository.
+Example: git remote add my-remote https://github.com/username/repo.git
+
+git remote remove: Removes a remote repository from the current Git repository.
+Example: git remote remove my-remote
+
+git branch -d: Deletes a branch that has been merged into the current branch.
+Example: git branch -d my-branch
+
+git branch -D: Deletes a branch, even if it has not been merged into the current branch.
+Example: git branch -D my-branch
+
+git checkout -b: Creates a new branch and switches to it.
+Example: git checkout -b my-new-branch
+
+git fetch --prune: Fetches changes from a remote repository and prunes any remote branches that no longer exist.
+Example: git fetch --prune origin
+
+git push --force: Forces Git to push changes to a remote repository, even if it results in non-fast-forward merges.
+Example: git push --force origin my-branch
+
+git clean: Deletes untracked files from the working tree.
+Example: git clean -f
+
+git revert --no-commit: Reverts one or more commits, but doesn't create a new commit.
+Example: git revert --no-commit abc123
+
+git blame -L: Shows the commit history and author of each line in a specific range of a file.
+Example: git blame -L 10,20 myfile.txt

@@ -1,0 +1,39 @@
+git is a client best thought of as a staging area where we
+can store our files for pushing to the upstream repo like
+github.
+
+where is the git staging area on the current machine?
+
+In technical terms, the staging area is the middle ground
+between what you have done to your files
+(also known as the working directory) and what you had
+last committed (the HEAD commit). As the name implies,
+the staging area gives you space to prepare (stage)
+the changes that will be reflected on the next commit.
+
+how can you roll back a commit?
+
+to revert a git commit and undo unwanted changes is simple.
+all you need to do is git revert <id of commit>
+git reflog will give you the id's of what was committed so
+you can pinpoint the commit you dont want
+if you wish to undo every change since a given commit
+occurred, you'd want to issue a hard git reset, not revert.
+
+how to merge with commits in main and your own?
+you would first need to git fetch and determine the
+merges from main into your own branch then push and do a
+PR to get main caught up with your branch.
+
+
+what sequential order are the merge in main and the divergent branch?
+there are different approaches for different usecases:
+first: git checkout main to get an idea of the variance between
+your branch and main
+second: git merge <your branch> this will bring up any merge
+conflicts if there are any
+third:git add to add the files that were altered during merging
+fourth:git commit to create a commit with the files
+fifth:git push to finalize the merge.
+
+https://ohshitgit.com/

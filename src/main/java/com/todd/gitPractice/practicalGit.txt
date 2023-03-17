@@ -1,0 +1,19 @@
+Credit: https://ohshitgit.com/
+
+the flow ->
+Your situation -> ex
+Your potential git solution ->
+
+Accidental commit to the wrong branch:
+undo the last commit with ->
+git reset HEAD~ --soft
+git stash
+move to correct branch ->
+git checkout name-of-correct-branch
+git stash pop
+git add . # or add <individual files>
+git commit -m "fixed commit!"
+now the changes are expected on the correct branch!
+
+if you ran a diff and its empty but you know you made changes
+
