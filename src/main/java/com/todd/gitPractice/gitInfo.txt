@@ -36,4 +36,33 @@ third:git add to add the files that were altered during merging
 fourth:git commit to create a commit with the files
 fifth:git push to finalize the merge.
 
+
+What is stash
+its to save changes without actually committing them. So we can return to them later without
+having a ton of commits
+
+git stash or git stash save both save changes that you are not ready to commit. you can
+stash them and come back later to alter them.
+git stash takes uncommitted changes and reverts the working directory to last commit?
+git stash pop removes recently stashed changes and re-apply them to the working copy.
+
+how to git revert it?
+
+git branching
+git branch to view all branches in the repo
+git branch <branch-name> to create a new branch based
+upon the current HEAD
+it doesnt switch you to the new branch
+the HEAD is: is pointer that refers to a current location
+and it points to a particular branch reference.
+the HEAD always points to the latest commit you made on the master branch
+But if you want to change the head you can point it to
+another branch with the changes you want to make
+git switch <branch-name> to swap to a different branch
+git switch -c <branch-name> switches you into a new branch
+git checkout <branch-name> works to swap branches but also does other things. like restore working tree files.
+git branch -D <branch-name>  to delete a branch but make sure they are merged prior
+you need to stash or commit changes before changing branches.
+git branch -m <branch-name> to rename branch
+
 https://ohshitgit.com/

@@ -100,3 +100,5 @@ Example: git revert --no-commit abc123
 
 git blame -L: Shows the commit history and author of each line in a specific range of a file.
 Example: git blame -L 10,20 myfile.txt
+
+git remote add origin <URL>: adds remote counterpart to the local one you have
